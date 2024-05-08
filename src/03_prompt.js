@@ -6,3 +6,4 @@ let familyName = prompt("Name?: ");
 console.log("Hallo, "+firstName,familyName+"!");
 
 // Test change
+// Test change 2
