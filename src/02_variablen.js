@@ -56,5 +56,6 @@ test = "hello"; // Überschreiben
 console.log("Inhalt: " + test); // Ausgabe
 
 // Konstante
-const test2 = "Hi!"; // Wertzuweisung muss sofort erfolgen
+const test2 = "Hi!"; // Wertzuweisung muss sofort mit Deklaration erfolgen
+test2 = "hello"; // Laufzeitfehler 
 console.log("Inhalt: " + test2); // Ausgabe
