@@ -2,7 +2,7 @@
   "name": "themen_01",
   "version": "1.0.0",
   "description": "## Setup Programmierumgebung",
-  "main": "src/03_prompt.js",
+  "main": "src/04_sum.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
