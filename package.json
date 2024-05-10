@@ -2,7 +2,7 @@
   "name": "themen_01",
   "version": "1.0.0",
   "description": "## Setup Programmierumgebung",
-  "main": "src/05_wahrheitswerte.js",
+  "main": "src/06_controlflow.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
