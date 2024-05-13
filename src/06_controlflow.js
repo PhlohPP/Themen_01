@@ -67,3 +67,36 @@ else
 
 /************  Ternäre (ternary) Schreibweise ************/
 // console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstName = "Jane";
+let job;
+
+job = "driver";  // .. fährt TAXI! / UBER
+job = "diver"; // .. taucht im Rhein!
+job = "artist"; // .. malt ein Bild!
+job = "pilot"; // .. macht etwas anderes! --> default
+job = "teacher"; // .. unterrichtet!
+job = "instructor"; // .. unterrichtet!
+
+switch (job) 
+{
+    case "driver":  // Test auf Gleichheit ...
+        console.log(firstName + ".. fährt TAXI!");
+        break;
+    case "diver":  // Test auf Gleichheit ...
+        console.log(firstName + ".. taucht im Rhein!");
+        break;
+    case "artist":  // Test auf Gleichheit ...
+        console.log(firstName + ".. malt ein Bild!");
+        break;
+    case "teacher":  // Test auf Gleichheit ...
+    case "instructor":  // Test auf Gleichheit ...
+        console.log(firstName + ".. unterrichtet!");
+        break;
+    default:  // Wichtig --> default!
+        console.log(firstName + ".. macht etwas anderes!");
+        break;
+}
