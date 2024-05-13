@@ -31,11 +31,26 @@ function outputMagic()
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
-outputMagic2("Abra"); // Argument --> Daten für Parameter
-outputMagic2("Cadabra");
-outputMagic2("Alakazam");
+// outputMagic2("Abra"); // Argument --> Daten für Parameter
+// outputMagic2("Cadabra");
+// outputMagic2("Alakazam");
+// outputMagic2(); // Fehler : undefined
 
 function outputMagic2(magicWord) // Parameter
 {
     console.log("**~ " + magicWord + "!" + " ~**");
+}
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+outputMagic3("Abracadabra","you will be a jelly candelabra");
+outputMagic3("Bibbidi-Bobbidi-Boo","no more water in the shoe");
+
+const prompt = require('prompt-sync')({sigint: true});
+outputMagic3(prompt("Magic Word? : "),prompt("Magic Spell? : ")); // Piping
+
+function outputMagic3(magicWord, magicSpell) // Parameter
+{
+    console.log("**~ " + magicWord + ", " + magicSpell + "!" + " ~**");
 }
