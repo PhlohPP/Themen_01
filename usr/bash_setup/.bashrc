@@ -124,3 +124,6 @@ __bash_prompt() {
 }
 __bash_prompt
 export PROMPT_DIRTRIM=4
+
+#nvs for node
+source nvs.sh && nvs use lts

@@ -3,4 +3,4 @@ alias gsc='git add -Av && echo && git status && echo && echo -e "\033[36mCommit 
 alias gscp='echo -e "\033[36m # # # GSCP - Git Stage Commit Push # # # \n\033[m\033[31mThere will be changes pushed with this tool! \033[m" && git add -Av && echo && git status && echo && echo -e "\033[36m Commit Message Input. Confirm with Enter.\033[m \n\n\033[41m You are using gscp. There will be a push to origin after confirmation. \033[m" &&  read -i -p msg && git commit -m "$msg";  echo "Confirm push with y" && read -s -n 1 key && if [ "$key" = "y" ] ; then (echo "Pushing to origin..." && git push origin &&  echo "You pressed $key. Pushed to origin successfully."); else echo "You pressed the wrong key. Operation canceled.";fi; unset key'
 
 
-// Memo: lokaler PC: muss mal noch automatisiert in der profile oder bashrc dafür sorgen das nvs und die richtige version direkt mit gestartet wird, damit der node-Befehl von Anfang an läuft
+// Memo (done): lokaler PC: muss mal noch automatisiert in der profile oder bashrc dafür sorgen das nvs und die richtige version direkt mit gestartet wird, damit der node-Befehl von Anfang an läuft
