@@ -20,8 +20,10 @@
 /* 02a. Theorie: Schleifen (for-schleife) */
 /* For -Schleifen als allg. Wiederholungs-Struktur */
 
-
-
+for (let i = 0; i < 10; i++) // i = Schleifenindex
+{
+    output("index: " + i);
+}
 /**
  *   PRAXIS
  * 
@@ -49,7 +51,7 @@ function getSentence(word1,word2,word3,word4) {
 // word1,word2, .... wordN :: Semantische Struktur
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation semantisches Problem --> numerisches Problem
-output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr(arr) {
     const GAP = " ";
     const PUNCT = ".";
