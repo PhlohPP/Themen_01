@@ -167,7 +167,6 @@ function getSentenceArr2(arr) {
 }
 
 
-
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
 function output(outputStr) {
