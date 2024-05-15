@@ -1,7 +1,7 @@
 
-# Themen_01 (Herr Schmidt)
+## Themen_01 (Herr Schmidt)
 
-## Setup Programmierumgebung
+### Setup Programmierumgebung
 
 - Testen, ob node.js vorhanden ist: node -v
  Testen, ob npm vorhanden ist: npm --v
@@ -11,9 +11,9 @@
 - Pfad zu "main" in package.json aktualisieren
 - Ausgabe Testen console.log("Hello, world!")
 
-# My Stuff
+## My Stuff
 
-## Setup Bash
+### Setup Bash
 - change to folder usr/setup/ in your repository and execute setup_bash.sh
 ```
 cd usr/bash_setup/
