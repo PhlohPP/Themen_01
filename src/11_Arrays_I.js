@@ -65,15 +65,23 @@ hier: Aufsummierung
 
 /* Besser: mit FOR-Schleife */
  
-let a = 0; // Anfangswert
-for (let i = 0; i < 10; i++) {
-    a = a + 1;
-    output("inhalt von a: " + a);
-}
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//     a = a + 1;
+//     output("inhalt von a: " + a);
+// }
 
+/*
+1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+Solange die Variable existiert, bleibt dieser erhalten
+hier: Verkettung eines Strings // Transponierung
+*/
 
-
-
+// let a = ""; // Anfangswert - leerer String
+// for (let i = 0; i < 10; i++) {
+//     a = a + "Test";
+//     output("inhalt von a: " + a);
+// }
 
 
 
@@ -122,17 +130,43 @@ function getSentenceArr(arr) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
+
     const GAP = " ";
     const PUNCT = ".";
+    let str = "";
 
-    for (let i = 0; i < arr.length; i++)  // i = Schleifenindex
-    {
-        output(arr[i]); 
-    }
+    // // 1. Variante: Struktur GENAU erzeugen ...
+    // for (let i = 0; i < arr.length; i++)  // i = Schleifenindex
+    // {
+    //     if (i == arr.length -1) { // Ausnahme
+    //         //str = str + PUNCT; // lange (komplette) Schreibweise
+    //         str += arr[i] + PUNCT;
+    //     } else { // Regel
+    //        // str = str + arr[i] + GAP; // lange (komplette) Schreibweise
+    //         str += arr[i] + GAP; // verkürzte Schreibweise 
+    //     }
+        
+    // }
+      
+    // return str;
+
+    // // 2. Variante: Struktur erzeugen + trimmen()
+
+    //     for (let i = 0; i < arr.length; i++)
+    //     {
+    //         str += arr[i] + GAP;
+    //     }
+        
+    //     return str.trim() + PUNCT;
+
+    // 3. Variante: Ausnutzen vorhandener Funktionen
+    return arr.join(GAP) + PUNCT;
 
 }
+
+
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
