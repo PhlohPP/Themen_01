@@ -1,4 +1,5 @@
-# Themen_01
+
+# Themen_01 (Herr Schmidt)
 
 ## Setup Programmierumgebung
 
@@ -9,3 +10,12 @@
 - Im Ordner Datei hello_world.js anlegen
 - Pfad zu "main" in package.json aktualisieren
 - Ausgabe Testen console.log("Hello, world!")
+
+# My Stuff
+
+## Setup Bash
+- change to folder usr/setup/ in your repository and execute setup_bash.sh
+```
+cd usr/bash_setup/
+/bin/sh setup_bash.sh
+```
