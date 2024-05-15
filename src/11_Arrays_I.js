@@ -20,10 +20,18 @@
 /* 02a. Theorie: Schleifen (for-schleife) */
 /* For -Schleifen als allg. Wiederholungs-Struktur */
 
-for (let i = 0; i < 10; i++) // i = Schleifenindex
-{
-    output("index: " + i);
+// for (let i = 0; i < 10; i++) // i = Schleifenindex
+// {
+//     output("index: " + i);
+// }
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (i = 0; i < arr.length; i++) {
+    output("inter: " + i);
+    output("extern: " + arr[i]); // Mapping
 }
+
 /**
  *   PRAXIS
  * 
